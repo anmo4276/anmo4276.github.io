@@ -5,25 +5,32 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <style>
 body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
-.w3-third img{margin-bottom: -6px; opacity: 0.8; cursor: pointer}
+.w3-third img{margin-bottom: -6px; opacity: 0.90; cursor: pointer}
+.w3-half img{margin-bottom: -6px; opacity: 0.90; cursor: pointer}
 .w3-third img:hover{opacity: 1}
+.w3-half img:hover{opacity: 1}
 </style>
 <body class="w3-light-grey w3-content" style="max-width:1600px">
 
 <!-- Sidebar/menu -->
-<nav class="w3-sidebar w3-bar-block w3-white w3-animate-left w3-text-grey w3-collapse w3-top w3-center" style="z-index:3;width:300px;font-weight:bold" id="mySidebar"><br>
-  <h3 class="w3-padding-64 w3-center"><b>SOME<br>NAME</b></h3>
-  <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-padding w3-hide-large">CLOSE</a>
-  <a href="#" onclick="w3_close()" class="w3-bar-item w3-button">PORTFOLIO</a> 
-  <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button">ABOUT ME</a> 
+<nav class="w3-sidebar w3-bar-block w3-white w3-animate-left w3-text-black w3-collapse w3-top w3-center" style="z-index:3;width:300px;font-weight:bold" id="mySidebar"><br>
+  <h3 class="w3-padding-64 w3-center"><b>Andres<br>Montealegre</b>  <div class="w3-panel w3-large">
+    <a href="https://www.instagram.com/andresm._/"><i class="fa fa-instagram w3-hover-opacity fa-lg"></i></a>
+    <a href="https://github.com/anmo4276"><i class="fa fa-github w3-hover-opacity fa-lg"></i></a>
+    <a href="https://www.linkedin.com/in/andres-montealegre-b7a7171b0/"><i class="fa fa-linkedin w3-hover-opacity fa-lg"></i></a>
+  </div></h3>
+    <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button">ABOUT ME</a> 
+  <a href="#Projects" onclick="w3_close()" class="w3-bar-item w3-button">PROJECTS</a> 
   <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button">CONTACT</a>
+
 </nav>
 
 <!-- Top menu on small screens -->
 <header class="w3-container w3-top w3-hide-large w3-white w3-xlarge w3-padding-16">
-  <span class="w3-left w3-padding">SOME NAME</span>
+  <span class="w3-left w3-padding">Andres Montealegre</span>
   <a href="javascript:void(0)" class="w3-right w3-button w3-white" onclick="w3_open()">☰</a>
 </header>
 
@@ -36,50 +43,10 @@ body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
   <!-- Push down content on small screens --> 
   <div class="w3-hide-large" style="margin-top:83px"></div>
   
-  <!-- Photo grid -->
-  <div class="w3-row">
-    <div class="w3-third">
-      <img src="/w3images/natureboy.jpg" style="width:100%" onclick="onClick(this)" alt="A boy surrounded by beautiful nature">
-      <img src="/w3images/girl_mountain.jpg" style="width:100%" onclick="onClick(this)" alt="What a beautiful scenery this sunset">
-      <img src="/w3images/girl.jpg" style="width:100%" onclick="onClick(this)" alt="The Beach. Me. Alone. Beautiful">
-    </div>
 
-    <div class="w3-third">
-      <img src="/w3images/boy.jpg" style="width:100%" onclick="onClick(this)" alt="Quiet day at the beach. Cold, but beautiful">
-      <img src="/w3images/man_bench.jpg" style="width:100%" onclick="onClick(this)" alt="Waiting for the bus in the desert">
-      <img src="/w3images/natureboy.jpg" style="width:100%" onclick="onClick(this)" alt="Nature again.. At its finest!">
-    </div>
-    
-    <div class="w3-third">
-      <img src="/w3images/girl.jpg" style="width:100%" onclick="onClick(this)" alt="Canoeing again">
-      <img src="/w3images/girl_train.jpg" style="width:100%" onclick="onClick(this)" alt="A girl, and a train passing">
-      <img src="/w3images/closegirl.jpg" style="width:100%" onclick="onClick(this)" alt="What a beautiful day!">
-    </div>
-  </div>
-
-  <!-- Pagination -->
-  <div class="w3-center w3-padding-32">
-    <div class="w3-bar">
-      <a href="#" class="w3-bar-item w3-button w3-hover-black">«</a>
-      <a href="#" class="w3-bar-item w3-black w3-button">1</a>
-      <a href="#" class="w3-bar-item w3-button w3-hover-black">2</a>
-      <a href="#" class="w3-bar-item w3-button w3-hover-black">3</a>
-      <a href="#" class="w3-bar-item w3-button w3-hover-black">4</a>
-      <a href="#" class="w3-bar-item w3-button w3-hover-black">»</a>
-    </div>
-  </div>
-  
-  <!-- Modal for full size images on click-->
-  <div id="modal01" class="w3-modal w3-black" style="padding-top:0" onclick="this.style.display='none'">
-    <span class="w3-button w3-black w3-xlarge w3-display-topright">×</span>
-    <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
-      <img id="img01" class="w3-image">
-      <p id="caption"></p>
-    </div>
-  </div>
 
   <!-- About section -->
-  <div class="w3-container w3-dark-grey w3-center w3-text-light-grey w3-padding-32" id="about">
+  <div class="w3-container w3-black w3-center w3-text-white w3-padding-32" id="about">
     <h4><b>About Me</b></h4>
     <img src="/w3images/avatar_hat.jpg" alt="Me" class="w3-image w3-padding-32" width="600" height="650">
     <div class="w3-content w3-justify" style="max-width:600px">
@@ -105,47 +72,77 @@ body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
         <div class="w3-container w3-padding-small w3-center w3-grey" style="width:80%">80%</div>
       </div>
       <p><button class="w3-button w3-light-grey w3-padding-large w3-margin-top w3-margin-bottom">Download Resume</button></p>
-      <hr class="w3-opacity">
 
-      <h4 class="w3-padding-16">How much I charge</h4>
-      <div class="w3-row-padding" style="margin:0 -16px">
-        <div class="w3-half w3-margin-bottom">
-          <ul class="w3-ul w3-white w3-center w3-opacity w3-hover-opacity-off">
-            <li class="w3-black w3-xlarge w3-padding-32">Basic</li>
-            <li class="w3-padding-16">Web Design</li>
-            <li class="w3-padding-16">Photography</li>
-            <li class="w3-padding-16">5GB Storage</li>
-            <li class="w3-padding-16">Mail Support</li>
-            <li class="w3-padding-16">
-              <h2>$ 10</h2>
-              <span class="w3-opacity">per month</span>
-            </li>
-            <li class="w3-light-grey w3-padding-24">
-              <button class="w3-button w3-white w3-padding-large">Sign Up</button>
-            </li>
-          </ul>
-        </div>
-        
-        <div class="w3-half">
-          <ul class="w3-ul w3-white w3-center w3-opacity w3-hover-opacity-off">
-            <li class="w3-black w3-xlarge w3-padding-32">Pro</li>
-            <li class="w3-padding-16">Web Design</li>
-            <li class="w3-padding-16">Photography</li>
-            <li class="w3-padding-16">50GB Storage</li>
-            <li class="w3-padding-16">Endless Support</li>
-            <li class="w3-padding-16">
-              <h2>$ 25</h2>
-              <span class="w3-opacity">per month</span>
-            </li>
-            <li class="w3-light-grey w3-padding-24">
-              <button class="w3-button w3-white w3-padding-large">Sign Up</button>
-            </li>
-          </ul>
-        </div>
-      </div>
     </div>
   </div>
+    <!-- Photo grid -->
+    
+    <div class="w3-row" id="Projects">
+        <div class="w3-half w3-container w3-margin-bottom w3-margin-top w3-padding-0" >
+          <a href="https://www.glee2023.org/"><img src="maxresdefault.jpg" style="width:100%"  alt="Taking inspiration from NASA's Apollo Moon landings 50 years ago, the Great Lunar Expedition for Everyone (GLEE) will be a catalyst for a new generation of space missions and explorers. This scientific and technological mission to the Moon will deploy 500 LunaSats to the lunar surface to conduct local and distributed research by partnering with NASA’s 2023 Artemis Mission to the Moon."></a>
+          <div class="w3-container w3-white">
+            <h3 class="w3-center"><b>Colorado Space Grant Consortium</b></h3>
+            <h4  class="w3-center">Software Engineer (Aug. 2020 - Present)</h4>
+            <p><b>Overview</b></p>
+            <p>Taking inspiration from NASA's Apollo Moon landings 50 years ago, the Great Lunar Expedition for Everyone (GLEE) will be a catalyst for a new generation of space missions and explorers. This scientific and technological mission to the Moon will deploy 500 LunaSats to the lunar surface to conduct local and distributed research by partnering with NASA’s 2023 Artemis Mission to the Moon.</p>
+            <p><b>Technical Applications</b></p>
+          </div>
+        </div>
+    
+        <div class="w3-half w3-container w3-margin-bottom w3-margin-top">
+          <a href="https://history-through-battleship.herokuapp.com/login"><img src="logo.jpg" style="width:100%" alt="What a beautiful scenery this sunset"></a>
+          <div class="w3-container w3-white">
+            <h3 class="w3-center"><b>History Through Battleship</b></h3>
+            <h4  class="w3-center">Software Engineer (Aug. 2020 - Jan. 2021)</h4>
+            <p><b>Overview</b></p>
+            <p>History Through Battleship is an educational web-game developed to test and refine students’ history skills. The application, which features both single player and local multiplayer, runs similarly to your typical battleship game. However, the game has a fresh educational twist that is meant to offer practical use. When launching a missile, a user must successfully answer a trivia question. If the user incorrectly answers their question, they lose their turn.</p>
+              <p><b>Technical Applications</b></p>
+              <p>Within the single player game mode, the user plays against an intelligent AI system that can launch missiles based on previous hits/misses. This competitive system can be a hard match for even the smartest history buff. The local multiplayer mode is played between two users on the same system. Once player 1 has placed his/her ships, they pass their turn to player 2 who will do the same. When both players’ ships have been placed, they can start the game. The users will then alternate turns by clicking the “End Turn” button at the bottom of the screen.
 
+              </p>
+              <p>On the backend, History through Battleship utilizes a database to keep track of user’s usernames, passwords, and stats. This database is updated as new users register. Similarly, users stats are updated as trivia questions are answered correctly and incorrectly. Furthermore, History Through Battleship connects to the Trivia DB API and retrieves the trivia questions seen within the game. These questions could be changed to other subjects as well.</p>
+            </div>
+          <!-- <img src="/w3images/man_bench.jpg" style="width:100%" onclick="onClick(this)" alt="Waiting for the bus in the desert">
+          <img src="/w3images/natureboy.jpg" style="width:100%" onclick="onClick(this)" alt="Nature again.. At its finest!"> -->
+        </div>
+    </div>
+    <div class="w3-row" id="Projects">
+        <div class="w3-third">
+          <a href="https://www.glee2023.org/"><img src="maxresdefault.jpg" style="width:100%"  alt="Taking inspiration from NASA's Apollo Moon landings 50 years ago, the Great Lunar Expedition for Everyone (GLEE) will be a catalyst for a new generation of space missions and explorers. This scientific and technological mission to the Moon will deploy 500 LunaSats to the lunar surface to conduct local and distributed research by partnering with NASA’s 2023 Artemis Mission to the Moon."></a>
+          
+        </div>
+    
+        <div class="w3-third">
+          <a href="https://history-through-battleship.herokuapp.com/login"><img src="logo.jpg" style="width:100%" alt="What a beautiful scenery this sunset"></a>
+          <!-- <img src="/w3images/man_bench.jpg" style="width:100%" onclick="onClick(this)" alt="Waiting for the bus in the desert">
+          <img src="/w3images/natureboy.jpg" style="width:100%" onclick="onClick(this)" alt="Nature again.. At its finest!"> -->
+        </div>
+        <div class="w3-third">
+          <a href="https://history-through-battleship.herokuapp.com/login"><img src="logo.jpg" style="width:100%" alt="What a beautiful scenery this sunset"></a>
+          <!-- <img src="/w3images/man_bench.jpg" style="width:100%" onclick="onClick(this)" alt="Waiting for the bus in the desert">
+          <img src="/w3images/natureboy.jpg" style="width:100%" onclick="onClick(this)" alt="Nature again.. At its finest!"> -->
+        </div>
+    </div>
+      <!-- Pagination -->
+      <div class="w3-center w3-padding-32">
+        <div class="w3-bar">
+          <a href="#" class="w3-bar-item w3-button w3-hover-black">«</a>
+          <a href="#" class="w3-bar-item w3-black w3-button">1</a>
+          <a href="#" class="w3-bar-item w3-button w3-hover-black">2</a>
+          <a href="#" class="w3-bar-item w3-button w3-hover-black">3</a>
+          <a href="#" class="w3-bar-item w3-button w3-hover-black">4</a>
+          <a href="#" class="w3-bar-item w3-button w3-hover-black">»</a>
+        </div>
+      </div>
+      
+      <!-- Modal for full size images on click-->
+      <div id="modal01" class="w3-modal w3-black" style="padding-top:0" onclick="this.style.display='none'">
+        <span class="w3-button w3-black w3-xlarge w3-display-topright">×</span>
+        <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+          <img id="img01" class="w3-image">
+          <p id="caption"></p>
+        </div>
+      </div>
   <!-- Contact section -->
   <div class="w3-container w3-light-grey w3-padding-32 w3-padding-large" id="contact">
     <div class="w3-content" style="max-width:600px">
@@ -206,7 +203,7 @@ body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
     </div>
   </footer>
   
-  <div class="w3-black w3-center w3-padding-24">Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-opacity">w3.css</a></div>
+  <div class="w3-black w3-center w3-padding-24">Created By Andres Montealegre</div>
 
 <!-- End page content -->
 </div>
