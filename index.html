@@ -9,14 +9,15 @@
 <style>
 body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
 .w3-third img{margin-bottom: -6px; opacity: 0.90; cursor: pointer}
-.w3-half img{margin-bottom: -6px; opacity: 0.90; cursor: pointer}
+.w3-half img{margin-bottom: -6px; opacity: 0.90; cursor: pointer;}
 .w3-third img:hover{opacity: 1}
 .w3-half img:hover{opacity: 1}
 html {
   scroll-behavior: smooth;
 }
+
 </style>
-<body class="w3-light-grey w3-content" style="max-width:1600px">
+<body class="w3-content" style="max-width:1600px; background-color: rgb(233, 233, 233);">
 
 <!-- Sidebar/menu -->
 <nav class="w3-sidebar w3-bar-block w3-white w3-animate-left w3-text-black w3-collapse w3-top w3-center" style="z-index:3;width:300px;font-weight:bold" id="mySidebar"><br>
@@ -61,7 +62,7 @@ html {
       <p>Welcome! My name is Andrés Montealegre, I am an incoming Software Engineering Intern at J.P. Morgan and current Software Engineer at NASA's Colorado Space Grant Consortium. Currently, I am expected to graduate in 2022 from the University of Colorado Boulder with studies in Computer Science, Applied Mathematics, and Global Engineering. Moreover, I am a part of several student groups including the University of Colorado Men's Soccer, Society of Hispanic Professional Engineers, Google Student Developer Club, and the LEEDS Investment and Trading Group. Each of these student groups reflect my passions for soccer, trading, and traveling.
       </p>
       <p>
-        This website, a personal project, has been created in order to display my projects throughout my undergraduate at the Univeristy of Colorado Boulder. Larger Projects are displayed higher in the projects tab, while smaller projects can be seen below. Each project has a thumbnail, which leads to the project when clicked on, and description. If you wish to see the code, please contact me (or find witin Github)! Furthermore, feel free to contact me (email & phone below) or send me a message using the "contact" tab!
+        This website, a personal project, has been created in order to display my projects throughout my undergraduate at the Univeristy of Colorado Boulder. Larger Projects are displayed higher in the projects tab, while smaller projects can be seen below. Each project has a thumbnail and description. If you wish to see the code, click the GitHub logo below the project. If you wish to see the project, click the thumbnail. Furthermore, feel free to contact me (email & phone below) or send me a message using the "contact" tab!
       </p>
       <p>
         <b>Contact Details</b>
@@ -91,23 +92,26 @@ html {
     <!-- Photo grid -->
     
     <div class="w3-row" id="projects">
-        <div class="w3-half w3-container w3-margin-bottom w3-margin-top w3-padding-0" >
+        <div class="w3-half" >
           <a href="https://www.glee2023.org/"><img src="maxresdefault.jpg" style="width:100%"  alt="Taking inspiration from NASA's Apollo Moon landings 50 years ago, the Great Lunar Expedition for Everyone (GLEE) will be a catalyst for a new generation of space missions and explorers. This scientific and technological mission to the Moon will deploy 500 LunaSats to the lunar surface to conduct local and distributed research by partnering with NASA’s 2023 Artemis Mission to the Moon."></a>
           <div class="w3-container w3-white">
-            <a href="https://www.glee2023.org/"><h3 class="w3-center"><b>NASA Colorado Space Grant Consortium</b></h3></a>
+            <h3 class="w3-center"><b>NASA Colorado Space Grant Consortium</b></h3> 
             <h4  class="w3-center">Software Engineer (Aug. 2020 - Present)</h4>
             <p><b>Overview</b></p>
             <p>Taking inspiration from NASA's Apollo Moon landings 50 years ago, the Great Lunar Expedition for Everyone (GLEE) will be a catalyst for a new generation of space missions and explorers. This scientific and technological mission to the Moon will deploy 500 LunaSats to the lunar surface to conduct local and distributed research by partnering with NASA’s 2023 Artemis Mission to the Moon. LunaSats are tiny spacecraft with an integrated sensor suite that will be programmed by teams of students, from every member country of the United Nations, to a mission of their own design. These teams will be mentored by GLEE program staff through the entire design, build, test, launch, and data gathering process.</p>
             <p><b>Technical Applications</b></p>
             <p>Working within an agile team setting, Software Engineers within GLEE lead the development of embedded software, analysis, and a library which enables students to write their own LunaSat scripts. </p>
             <p>This includes LunaSat code documentation, verification and validation, and the development and testing of a delay-tolerant LoRA wireless network architecture. This also involves dynamically scaling sampling protocol with associated data relay, aggregation, and presentation. Furthermore, we implement software for a wide variety of sensors including Magnetometer, Accelerometer, Capacitive, Thermopile, and Radio Frequency Sensors that will be included in the final LunaSat Architecture.</p>
+            <div class="w3-center">
+              <a href="https://github.com/GLEE2023/GLEE2023"><i class="fa fa-github w3-hover-opacity fa-4x"></i></a>
+            </div>
           </div>
         </div>
     
-        <div class="w3-half w3-container w3-margin-bottom w3-margin-top">
+        <div class="w3-half">
           <a href="https://history-through-battleship.herokuapp.com/login"><img src="logo.jpg" style="width:100%" alt="What a beautiful scenery this sunset"></a>
           <div class="w3-container w3-white">
-            <a href="https://history-through-battleship.herokuapp.com/login"><h3 class="w3-center"><b>History Through Battleship</b></h3></a>
+            <h3 class="w3-center"><b>History Through Battleship</b></h3>
             <h4  class="w3-center">Software Engineer (Aug. 2020 - Jan. 2021)</h4>
             <p><b>Overview</b></p>
             <p>History Through Battleship is an educational web-game developed to test and refine students’ history skills. The application, which features both single player and local multiplayer, runs similarly to your typical battleship game. However, the game has a fresh educational twist that is meant to offer practical use. When launching a missile, a user must successfully answer a trivia question or risk losing their turn.</p>
@@ -116,24 +120,47 @@ html {
 
               </p>
               <p>On the backend, History through Battleship utilizes a database to keep track of user’s usernames, passwords, and stats. This database is updated as new users register. Similarly, users stats are updated as trivia questions are answered correctly and incorrectly. Furthermore, History Through Battleship connects to the Trivia DB API and retrieves the trivia questions seen within the game. These questions could be changed to other subjects as well.</p>
+              <div class="w3-center">
+              <a href="https://github.com/anmo4276/Battleship"><i class="fa fa-github w3-hover-opacity fa-4x"></i></a>
+            </div>
             </div>
           <!-- <img src="/w3images/man_bench.jpg" style="width:100%" onclick="onClick(this)" alt="Waiting for the bus in the desert">
           <img src="/w3images/natureboy.jpg" style="width:100%" onclick="onClick(this)" alt="Nature again.. At its finest!"> -->
         </div>
     </div>
     <div class="w3-row" id="Projects">
-        <div class="w3-third">
-          <a href="https://www.glee2023.org/"><img src="maxresdefault.jpg" style="width:100%"  alt="Taking inspiration from NASA's Apollo Moon landings 50 years ago, the Great Lunar Expedition for Everyone (GLEE) will be a catalyst for a new generation of space missions and explorers. This scientific and technological mission to the Moon will deploy 500 LunaSats to the lunar surface to conduct local and distributed research by partnering with NASA’s 2023 Artemis Mission to the Moon."></a>
-          
-        </div>
     
         <div class="w3-third">
-          <a href="https://history-through-battleship.herokuapp.com/login"><img src="logo.jpg" style="width:100%" alt="What a beautiful scenery this sunset"></a>
-          <!-- <img src="/w3images/man_bench.jpg" style="width:100%" onclick="onClick(this)" alt="Waiting for the bus in the desert">
-          <img src="/w3images/natureboy.jpg" style="width:100%" onclick="onClick(this)" alt="Nature again.. At its finest!"> -->
+          <a href="https://drive.google.com/file/d/1Ye_DBxYV0qnjyTj7hcTuAWmwQS4o73gM/view?usp=sharing"><img src="data.png" style="width:100%" alt="What a beautiful scenery this sunset"></a>
+          <div class="w3-container w3-white">
+            <h3 class="w3-center"><b>Hash implementation & Analysis</b></h3>
+            <h4  class="w3-center">Undergraduate Project</h4>
+            <p><b>Overview</b></p>
+            
+            <p>
+              Implemented and analyzed four search methods (BST, Cuckoo Hash, Chain Hash, and Linear Probing). Timed, tested, and recorded search methods over one thousand times each. Then organized data to understand which method was most optimized at a specific period.
+            </p>
+            <div class="w3-center">
+              <a href="https://github.com/anmo4276/HashImplementationAndAnalysis"><i class="fa fa-github w3-hover-opacity fa-4x"></i></a>
+            </div>
+            </div>
         </div>
         <div class="w3-third">
-          <a href="https://history-through-battleship.herokuapp.com/login"><img src="logo.jpg" style="width:100%" alt="What a beautiful scenery this sunset"></a>
+          
+          <a href="https://github.com/anmo4276/GameOfThrones"><img src="GOT.jpg" style="width:100%" alt="What a beautiful scenery this sunset"></a>
+          <div class="w3-container w3-white">
+          <h3 class="w3-center"><b>Game of Thrones</b></h3>
+          <h4  class="w3-center">Undergraduate Project</h4>
+          <p><b>Overview</b></p>
+          
+          <p>
+            Interactive Game of Thrones Board Game that is meant to implement various topics covered within Introduction To Computing including Object Oriented Programming, file manipulation, and data structure use.
+          </p>
+          <br>
+          <div class="w3-center">
+            <a href="https://github.com/anmo4276/GameOfThrones"><i class="fa fa-github w3-hover-opacity fa-4x"></i></a>
+          </div>
+          </div>
           <!-- <img src="/w3images/man_bench.jpg" style="width:100%" onclick="onClick(this)" alt="Waiting for the bus in the desert">
           <img src="/w3images/natureboy.jpg" style="width:100%" onclick="onClick(this)" alt="Nature again.. At its finest!"> -->
         </div>
